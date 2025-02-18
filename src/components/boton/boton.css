@@ -1,0 +1,49 @@
+.boton {
+  background-color: #ffb6a3;
+  text-decoration: none;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e3a18d;
+
+  font-size: var(--fs-sm);
+  &:hover {
+    background-color: #e3a18d;
+  }
+}
+
+.icono {
+  font-size: 23px;
+}
+
+.icono-github {
+  font-size: 18px;
+}
+
+.boton-texto {
+  display: none;
+}
+
+@media (width > 700px) {
+  .boton {
+    border-radius: 20px;
+    padding: 8px 16px;
+    column-gap: 7px;
+    width: fit-content;
+
+    &:hover {
+      background-color: #e3a18d;
+    }
+  }
+
+  .boton-texto {
+    display: inline-flex;
+  }
+  .boton-icono {
+    display: none;
+  }
+}

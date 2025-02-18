@@ -1,0 +1,132 @@
+.home {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.informacion-layout {
+  animation: fade-up 0.6s;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: min-content;
+    grid-template-areas:
+    "avatar avatar empty2 empty4"
+    "titulo  titulo titulo titulo "
+    "nombre nombre nombre nombre "
+    " tag tag tag tag"
+    "sobre-mi sobre-mi sobre-mi sobre-mi"
+    "botones  botones botones empty3 ";
+  column-gap: 25px;
+  row-gap: 0.5rem;
+  align-items: center;
+}
+
+.avatar {
+  max-inline-size: 100%;
+  display: block;
+  grid-area: avatar;
+}
+
+.titulo {
+  font-style: italic;
+  font-weight: 300;
+  font-size: var(--fs-md);
+  grid-area: titulo;
+  line-height: 1;
+  margin-top: 1rem;
+}
+
+.nombre {
+  font-size: var(--fs-xl);
+  grid-area: nombre;
+  line-height: 1;
+}
+
+.tag-disponible {
+  padding: 5px;
+  background-color: #c4d7d1;
+  border: 1px solid #2e5a5a;
+
+  width: fit-content;
+  height: fit-content;
+  font-size: var(--fs-sm);
+  grid-area: tag;
+}
+
+.sobre-mi {
+  font-size: var(--fs-base);
+  grid-area: sobre-mi;
+  margin-top: 1rem;
+}
+
+.container-botones {
+  display: flex;
+  justify-content: space-between;
+  grid-area: botones;
+  margin-top: 2rem;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@media (width > 500px) {
+  .informacion-layout {
+    grid-template-areas:
+      "avatar titulo titulo"
+      "avatar nombre nombre"
+      "avatar tag tag"
+      "sobre-mi sobre-mi sobre-mi"
+      "botones botones empty";
+    column-gap: 50px;
+    row-gap: 0;
+  }
+
+  .titulo {
+    margin-top: 0;
+  }
+}
+
+@media (width > 700px) {
+  .informacion-layout {
+    grid-template-areas:
+      "avatar titulo titulo"
+      "avatar nombre nombre"
+      "avatar tag tag"
+      "sobre-mi sobre-mi sobre-mi"
+      "botones botones botones";
+  }
+
+}
+
+@media (width > 900px) {
+  .informacion-layout {
+    grid-template-areas:
+      "avatar titulo titulo"
+      "avatar nombre nombre"
+      "avatar tag tag"
+      "avatar sobre-mi sobre-mi"
+      "botones botones botones";
+  }
+}
+
+@media (width > 1200px) {
+  .informacion-layout {
+    grid-template-areas:
+      "avatar titulo titulo"
+      "avatar nombre nombre"
+      "avatar tag tag"
+      "avatar sobre-mi sobre-mi"
+      "avatar botones botones";
+  }
+}
