@@ -1,0 +1,45 @@
+.proyecto {
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.proyecto .imagen-container {
+  width: 100%;
+}
+
+.proyecto .imagen-container img {
+  max-inline-size: 100%;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.proyecto .informacion-container {
+  padding: 1rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.proyecto-nombre {
+  font-size: var(--fs-md);
+}
+
+.proyecto-descripcion {
+}
+.proyecto-tecnologias {
+  font-weight: 300;
+  font-style: italic;
+  font-size: var(--fs-sm);
+  margin-bottom: 1.5rem;
+}
+
+.proyecto .botones-container {
+  margin-top: auto;
+  display: flex;
+  gap: 2rem;
+}
