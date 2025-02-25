@@ -1,11 +1,7 @@
 .home {
-  min-height: 100vh;
-  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .informacion-layout {
@@ -13,7 +9,7 @@
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-rows: min-content;
-    grid-template-areas:
+  grid-template-areas:
     "avatar avatar empty2 empty4"
     "titulo  titulo titulo titulo "
     "nombre nombre nombre nombre "
@@ -108,7 +104,6 @@
       "sobre-mi sobre-mi sobre-mi"
       "botones botones botones";
   }
-
 }
 
 @media (width > 900px) {

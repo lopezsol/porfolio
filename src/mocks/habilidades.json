@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "nombre": "React",
+    "url_imagen": "/images/habilidades/react.png",
+    "alt": "Logo de React"
+  },
+  {
+    "id": 2,
+    "nombre": "HTML",
+    "url_imagen": "/images/habilidades/html.png",
+    "alt": "Logo de HTML"
+  },
+  {
+    "id": 3,
+    "nombre": "CSS",
+    "url_imagen": "/images/habilidades/css.png",
+    "alt": "Logo de CSS"
+  },
+  {
+    "id": 4,
+    "nombre": "JavaScript",
+    "url_imagen": "/images/habilidades/js.png",
+    "alt": "Logo de JavaScript"
+  },
+  {
+    "id": 5,
+    "nombre": "Java",
+    "url_imagen": "/images/habilidades/java.png",
+    "alt": "Logo de Java"
+  },
+  {
+    "id": 6,
+    "nombre": "Python",
+    "url_imagen": "/images/habilidades/python.png",
+    "alt": "Logo de Python"
+  },
+  {
+    "id": 7,
+    "nombre": "Git",
+    "url_imagen": "/images/habilidades/git.png",
+    "alt": "Logo de Git"
+  },
+  {
+    "id": 8,
+    "nombre": "MySQL",
+    "url_imagen": "/images/habilidades/database.png",
+    "alt": "Logo de MySQL"
+  },
+  {
+    "id": 9,
+    "nombre": "Jira",
+    "url_imagen": "/images/habilidades/jira.png",
+    "alt": "Logo de Jira"
+  },
+  {
+    "id": 10,
+    "nombre": "Figma",
+    "url_imagen": "/images/habilidades/figma.png",
+    "alt": "Logo de Figma"
+  },
+  {
+    "id": 11,
+    "nombre": "Excel",
+    "url_imagen": "/images/habilidades/excel.png",
+    "alt": "Logo de Excel"
+  }
+]

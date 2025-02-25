@@ -10,7 +10,6 @@ export function Home() {
           alt="avatar mujer programando"
           className="avatar"
         />
-
         <h2 className="titulo">Desarrolladora de software</h2>
         <h1 className="nombre verde">Sol López Ríos</h1>
         <p className="tag-disponible ">Disponible para trabajar</p>

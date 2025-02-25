@@ -29,13 +29,11 @@
   font-size: var(--fs-md);
 }
 
-.proyecto-descripcion {
-}
 .proyecto-tecnologias {
   font-weight: 300;
   font-style: italic;
   font-size: var(--fs-sm);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .proyecto .botones-container {

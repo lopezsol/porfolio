@@ -6,7 +6,7 @@ import { CiMail } from "react-icons/ci";
 import { IoIosLink } from "react-icons/io";
 
 export function Boton({ tipo, url_proyecto }) {
-  const TIPOS = {
+  const tipos = {
     curriculum: "Currículum",
     linkedin: "LinkedIn",
     github: "GitHub",
@@ -14,7 +14,7 @@ export function Boton({ tipo, url_proyecto }) {
     sitioWeb: "Sitio Web",
   };
 
-  const URL = {
+  const url = {
     curriculum: "/documents/CV Lopez Rios Sol 2025.pdf",
     linkedin: "https://www.linkedin.com/in/lrsol/",
     github: url_proyecto || "https://github.com/lopezsol",
@@ -22,33 +22,37 @@ export function Boton({ tipo, url_proyecto }) {
     sitioWeb: url_proyecto,
   };
 
-  const ICONOS = {
+  const iconos = {
     curriculum: <IoCloudDownloadOutline className="icono" />,
     linkedin: <CiLinkedin className="icono" />,
     github: <FiGithub className="icono-github" />,
     correo: <CiMail className="icono" />,
     sitioWeb: <IoIosLink className="icono-github" />,
   };
+
+  const esDescargable = tipo === "curriculum";
   return (
     <>
       <a
-        href={URL[tipo]}
+        href={url[tipo]}
         target="_blank"
         className="boton boton-texto"
-        download
+        download={esDescargable}
+        rel="noopener noreferrer"
       >
-        {ICONOS[tipo]}
-        {TIPOS[tipo]}
+        {iconos[tipo]}
+        {tipos[tipo]}
       </a>
 
       <a
-        href={URL[tipo]}
+        href={url[tipo]}
         target="_blank"
         className="boton boton-icono"
-        aria-label={TIPOS[tipo]}
-        download
+        aria-label={tipos[tipo]}
+        download={esDescargable}
+        rel="noopener noreferrer"
       >
-        {ICONOS[tipo]}
+        {iconos[tipo]}
       </a>
     </>
   );
