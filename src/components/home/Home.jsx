@@ -6,7 +6,7 @@ export function Home() {
     <section className="container home">
       <div className="informacion-layout">
         <img
-          src="/images/avatar.png"
+          src="/images/avatar.webp"
           alt="avatar mujer programando"
           className="avatar"
         />
@@ -15,8 +15,8 @@ export function Home() {
         <p className="tag-disponible ">Disponible para trabajar</p>
 
         <p className="sobre-mi">
-          Estudiante del último año de{" "}
-          <b className="verde">Ingeniería en Sistemas de Información</b>.
+          Estudiante del último año de 
+          <b className="verde"> Ingeniería en Sistemas de Información</b>.
           <br />
           Con conocimientos en React, Java, Spring Boot y MySQL.
         </p>

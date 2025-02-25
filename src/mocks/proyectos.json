@@ -6,7 +6,7 @@
     "tecnologias": "React / Java / Spring Boot / Spring Cloud / MySQL",
     "url_git": "https://github.com/Astruc86/manicuria-fe",
     "url_sitio": "https://mia-manicuria.netlify.app/home",
-    "url_imagen": "/images/proyectos/mia.png",
+    "url_imagen": "/images/proyectos/mia.webp",
     "alt_imagen": "Logo de la marca MIA, representado por una pata de gato mostrando sus garras"
   },
   {
@@ -16,7 +16,7 @@
     "tecnologias": "Next.JS / TypeScript",
     "url_git": "https://github.com/lopezsol/NABI-carrito-compras",
     "url_sitio": "https://nabi-carrito-compras.vercel.app/",
-    "url_imagen": "/images/proyectos/nabi.png",
+    "url_imagen": "/images/proyectos/nabi.webp",
     "alt_imagen": "Logo de la marca NABI"
 
   }

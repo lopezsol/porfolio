@@ -4,7 +4,7 @@ export function CardProyecto({ proyecto }) {
   return (
     <article className="proyecto">
       <div className="imagen-container">
-        <img src={proyecto.url_imagen} alt={proyecto.alt_imagen} />
+        <img src={proyecto.url_imagen} alt={proyecto.alt_imagen}/>
       </div>
       <div className="informacion-container">
         <h2 className="proyecto-nombre">{proyecto.nombre}</h2>

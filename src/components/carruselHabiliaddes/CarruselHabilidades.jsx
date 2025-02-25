@@ -36,6 +36,7 @@ export function CarruselHabilidades() {
                 src={habilidad.url_imagen}
                 alt={habilidad.alt}
                 key={habilidad.id}
+                loading="lazy"
               ></img>
               <p>{habilidad.nombre}</p>
             </div>

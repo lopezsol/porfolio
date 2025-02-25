@@ -2,67 +2,67 @@
   {
     "id": 1,
     "nombre": "React",
-    "url_imagen": "/images/habilidades/react.png",
+    "url_imagen": "/images/habilidades/react.webp",
     "alt": "Logo de React"
   },
   {
     "id": 2,
     "nombre": "HTML",
-    "url_imagen": "/images/habilidades/html.png",
+    "url_imagen": "/images/habilidades/html.webp",
     "alt": "Logo de HTML"
   },
   {
     "id": 3,
     "nombre": "CSS",
-    "url_imagen": "/images/habilidades/css.png",
+    "url_imagen": "/images/habilidades/css.webp",
     "alt": "Logo de CSS"
   },
   {
     "id": 4,
     "nombre": "JavaScript",
-    "url_imagen": "/images/habilidades/js.png",
+    "url_imagen": "/images/habilidades/js.webp",
     "alt": "Logo de JavaScript"
   },
   {
     "id": 5,
     "nombre": "Java",
-    "url_imagen": "/images/habilidades/java.png",
+    "url_imagen": "/images/habilidades/java.webp",
     "alt": "Logo de Java"
   },
   {
     "id": 6,
     "nombre": "Python",
-    "url_imagen": "/images/habilidades/python.png",
+    "url_imagen": "/images/habilidades/python.webp",
     "alt": "Logo de Python"
   },
   {
     "id": 7,
     "nombre": "Git",
-    "url_imagen": "/images/habilidades/git.png",
+    "url_imagen": "/images/habilidades/git.webp",
     "alt": "Logo de Git"
   },
   {
     "id": 8,
     "nombre": "MySQL",
-    "url_imagen": "/images/habilidades/database.png",
+    "url_imagen": "/images/habilidades/database.webp",
     "alt": "Logo de MySQL"
   },
   {
     "id": 9,
     "nombre": "Jira",
-    "url_imagen": "/images/habilidades/jira.png",
+    "url_imagen": "/images/habilidades/jira.webp",
     "alt": "Logo de Jira"
   },
   {
     "id": 10,
     "nombre": "Figma",
-    "url_imagen": "/images/habilidades/figma.png",
+    "url_imagen": "/images/habilidades/figma.webp",
     "alt": "Logo de Figma"
   },
   {
     "id": 11,
     "nombre": "Excel",
-    "url_imagen": "/images/habilidades/excel.png",
+    "url_imagen": "/images/habilidades/excel.webp",
     "alt": "Logo de Excel"
   }
 ]
