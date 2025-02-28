@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nombre": "MIA",
-    "descripcion": "Aplicación web para la gestión de turnos de una manicuría manicuría.",
+    "descripcion": "Aplicación web para la gestión de turnos de una manicuría.",
     "tecnologias": "React / Java / Spring Boot / Spring Cloud / MySQL",
     "url_git": "https://github.com/Astruc86/manicuria-fe",
     "url_sitio": "https://mia-manicuria.netlify.app/home",

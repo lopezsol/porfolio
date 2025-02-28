@@ -1,0 +1,32 @@
+.sobre-mi {
+  display: grid;
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+}
+
+.sobre-mi img {
+  width: clamp(200px, 100%, 300px);
+  display: block;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.sobre-mi div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 65ch;
+}
+
+.italic {
+  font-style: italic;
+}
+
+@media (width > 768px) {
+  .sobre-mi {
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+  }
+}

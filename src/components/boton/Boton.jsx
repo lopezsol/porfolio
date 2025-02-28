@@ -10,7 +10,7 @@ export function Boton({ tipo, url_proyecto }) {
     curriculum: "Currículum",
     linkedin: "LinkedIn",
     github: "GitHub",
-    correo: "Correo",
+    correo: "Contáctame",
     sitioWeb: "Sitio Web",
   };
 
