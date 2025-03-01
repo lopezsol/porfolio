@@ -21,10 +21,10 @@ export function Home() {
           Con conocimientos en React, Java, Spring Boot y MySQL.
         </p>
         <nav className="container-botones">
-          <Boton tipo={"curriculum"} />
-          <Boton tipo={"correo"} />
-          <Boton tipo={"linkedin"} />
-          <Boton tipo={"github"} />
+          <Boton tipo="curriculum" estilo="primario" />
+          <Boton tipo="correo" estilo="primario" />
+          <Boton tipo="linkedin" estilo="primario" />
+          <Boton tipo="github" estilo="primario" />
         </nav>
       </div>
     </section>

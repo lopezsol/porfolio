@@ -1,16 +1,31 @@
-.boton {
-  background-color: #ffb6a3;
+.btn {
   text-decoration: none;
-  border-radius: 50%;
   color: black;
-  display: flex;
+  font-size: var(--fs-sm);
+  transition: background-color 0.3s ease;
+}
+
+.btn-texto[estilo="primario"],
+.btn-icono[estilo="primario"] {
+  background-color: #ffb6a3;
   justify-content: center;
   align-items: center;
   border: 1px solid #e3a18d;
-  font-size: var(--fs-sm);
-  transition: background-color 0.3s ease;
   &:hover {
     background-color: #e3a18d;
+  }
+}
+
+.btn-icono[estilo="primario"] {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.btn-texto[estilo="link"] {
+  display: block;
+  &:hover {
+    text-decoration-line: underline;
   }
 }
 
@@ -19,34 +34,29 @@
 }
 
 .icono-github {
-  font-size: 1.2rem
+  font-size: 1.2rem;
 }
 
-.boton-texto {
+.btn-icono, .btn-texto[estilo="link"] {
+  display: flex;
+}
+
+.btn-texto, .btn-icono[estilo="link"] {
   display: none;
 }
 
-.boton-icono {
-  width: 45px;
-  height: 45px;
-}
-
 @media (width > 768px) {
-  .boton {
+  .btn {
     border-radius: 1.25rem;
     padding: 0.5rem 1rem;
     column-gap: 0.5rem;
     width: fit-content;
-
-    &:hover {
-      background-color: #e3a18d;
-    }
   }
 
-  .boton-texto {
-    display: inline-flex;
+  .btn-texto {
+    display: flex;
   }
-  .boton-icono {
+  .btn-icono {
     display: none;
   }
 }

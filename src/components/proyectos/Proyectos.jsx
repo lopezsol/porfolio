@@ -3,7 +3,7 @@ import proyectos from "../../mocks/proyectos.json";
 import { CardProyecto } from "../cardProyecto/CardProyecto";
 export function Proyectos() {
   return (
-    <section className="proyectos container">
+    <section className="proyectos container" id="proyectos">
       <h1 className="titulo-seccion">&lt;/&gt; Proyectos</h1>
       <section className="proyectos-layout">
         {proyectos.map((proyecto) => {

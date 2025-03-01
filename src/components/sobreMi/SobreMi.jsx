@@ -2,7 +2,7 @@ import "./sobreMi.css";
 
 export function SobreMi() {
   return (
-    <section className="container">
+    <section className="container" id="sobre-mi">
       <h1 className="titulo-seccion">&lt;/&gt; Sobre mí</h1>
       <article className="sobre-mi">
         <img src="/images/foto-perfil.webp" alt="" />

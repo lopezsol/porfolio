@@ -19,6 +19,11 @@ body {
   color: hsl(180, 32%, 6%, 100%);
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 1rem;
+}
+
 body,
 h1,
 h2,

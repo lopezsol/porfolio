@@ -5,7 +5,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
 import { IoIosLink } from "react-icons/io";
 
-export function Boton({ tipo, url_proyecto }) {
+export function Boton({ tipo, url_proyecto, estilo }) {
   const tipos = {
     curriculum: "Currículum",
     linkedin: "LinkedIn",
@@ -31,28 +31,31 @@ export function Boton({ tipo, url_proyecto }) {
   };
 
   const esDescargable = tipo === "curriculum";
+  const esEstiloPrimario = estilo === "primario";
   return (
     <>
       <a
         href={url[tipo]}
         target="_blank"
-        className="boton boton-texto"
+        className="btn btn-texto"
         download={esDescargable}
         rel="noopener noreferrer"
+        estilo={estilo}
       >
-        {iconos[tipo]}
+        {esEstiloPrimario && iconos[tipo]}
         {tipos[tipo]}
       </a>
 
       <a
         href={url[tipo]}
         target="_blank"
-        className="boton boton-icono"
+        className="btn btn-icono"
         aria-label={tipos[tipo]}
         download={esDescargable}
+        estilo={estilo}
         rel="noopener noreferrer"
       >
-        {iconos[tipo]}
+        {esEstiloPrimario && iconos[tipo]}
       </a>
     </>
   );

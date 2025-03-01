@@ -9,7 +9,7 @@
 .sobre-mi img {
   width: clamp(200px, 100%, 300px);
   display: block;
-  border-radius: 10px;
+  border-radius: 1rem;
   border: 1px solid black;
 }
 

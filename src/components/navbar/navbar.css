@@ -1,0 +1,40 @@
+.nav-principal {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: fit-content;
+  border-radius: 2rem;
+  margin: auto;
+  padding: 8px 16px;
+
+  animation: nav-sticky linear both;
+  animation-timeline: scroll(root);
+  animation-range: 0 100px;
+}
+
+.nav-principal ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.nav-principal a {
+  text-decoration: none;
+  color: black;
+  font-size: var(--fs-sm);
+  &:hover {
+    color: #2e5a5a;
+  }
+}
+
+@keyframes nav-sticky {
+  to {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+}
