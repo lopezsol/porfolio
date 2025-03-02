@@ -15,14 +15,14 @@ export function CardProyecto({ proyecto }) {
             <Boton
               tipo="github"
               url_proyecto={proyecto.url_git}
-              estilo="primario"
+              className="primario"
             />
           )}
           {proyecto.url_sitio && (
             <Boton
               tipo="sitioWeb"
               url_proyecto={proyecto.url_sitio}
-              estilo="primario"
+              className="primario"
             />
           )}
         </div>

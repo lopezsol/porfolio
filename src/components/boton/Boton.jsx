@@ -5,58 +5,55 @@ import { CiLinkedin } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
 import { IoIosLink } from "react-icons/io";
 
-export function Boton({ tipo, url_proyecto, estilo }) {
-  const tipos = {
-    curriculum: "Currículum",
-    linkedin: "LinkedIn",
-    github: "GitHub",
-    correo: "Contáctame",
-    sitioWeb: "Sitio Web",
-  };
+const config = {
+  curriculum: {
+    title: "Currículum",
+    url: "/documents/CV Lopez Rios Sol 2025.pdf",
+    icon: <IoCloudDownloadOutline className="btn__icono" />,
+    download: true,
+  },
+  linkedin: {
+    title: "LinkedIn",
+    url: "https://www.linkedin.com/in/lrsol/",
+    icon: <CiLinkedin className="btn__icono" />,
+    download: false,
+  },
+  github: {
+    title: "GitHub",
+    url: "https://github.com/lopezsol",
+    icon: <FiGithub className="btn__icono--sm" />,
+    download: false,
+  },
+  correo: {
+    title: "Contáctame",
+    url: "mailto:lopezrios.sol@gmail.com",
+    icon: <CiMail className="btn__icono" />,
+    download: false,
+  },
+  sitioWeb: {
+    title: "Sitio Web",
+    url: "",
+    icon: <IoIosLink className="btn__icono--sm" />,
+    download: false,
+  },
+};
 
-  const url = {
-    curriculum: "/documents/CV Lopez Rios Sol 2025.pdf",
-    linkedin: "https://www.linkedin.com/in/lrsol/",
-    github: url_proyecto || "https://github.com/lopezsol",
-    correo: "mailto:lopezrios.sol@gmail.com",
-    sitioWeb: url_proyecto,
-  };
+export function Boton({ tipo, url_proyecto, className }) {
+  const { title, url, icon, download } = config[tipo];
+  const esEstiloPrimario = className === "primario";
+  const urlBtn = url_proyecto || url;
 
-  const iconos = {
-    curriculum: <IoCloudDownloadOutline className="icono" />,
-    linkedin: <CiLinkedin className="icono" />,
-    github: <FiGithub className="icono-github" />,
-    correo: <CiMail className="icono" />,
-    sitioWeb: <IoIosLink className="icono-github" />,
-  };
-
-  const esDescargable = tipo === "curriculum";
-  const esEstiloPrimario = estilo === "primario";
   return (
-    <>
-      <a
-        href={url[tipo]}
-        target="_blank"
-        className="btn btn-texto"
-        download={esDescargable}
-        rel="noopener noreferrer"
-        estilo={estilo}
-      >
-        {esEstiloPrimario && iconos[tipo]}
-        {tipos[tipo]}
-      </a>
-
-      <a
-        href={url[tipo]}
-        target="_blank"
-        className="btn btn-icono"
-        aria-label={tipos[tipo]}
-        download={esDescargable}
-        estilo={estilo}
-        rel="noopener noreferrer"
-      >
-        {esEstiloPrimario && iconos[tipo]}
-      </a>
-    </>
+    <a
+      href={urlBtn}
+      target="_blank"
+      className={`btn ${className ? `btn--${className}` : ""}`}
+      download={download}
+      rel="noopener noreferrer"
+      aria-label={title}
+    >
+      {esEstiloPrimario && icon}
+      <span className="btn__texto">{title}</span>
+    </a>
   );
 }

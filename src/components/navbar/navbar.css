@@ -3,8 +3,9 @@
   top: 0;
   z-index: 1;
   width: fit-content;
-  border-radius: 2rem;
+  border-radius: var(--border-radius-lg);
   margin: auto;
+  margin-top: 0.5rem;
   padding: 8px 16px;
 
   animation: nav-sticky linear both;
@@ -24,10 +25,10 @@
 
 .nav-principal a {
   text-decoration: none;
-  color: black;
+  color: var(--color-texto);
   font-size: var(--fs-sm);
   &:hover {
-    color: #2e5a5a;
+    color: var(--color-principal);
   }
 }
 

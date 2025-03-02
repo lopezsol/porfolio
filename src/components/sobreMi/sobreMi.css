@@ -9,19 +9,16 @@
 .sobre-mi img {
   width: clamp(200px, 100%, 300px);
   display: block;
-  border-radius: 1rem;
-  border: 1px solid black;
+  padding: 5px;
+  border-radius: var(--border-radius-lg);
+  background: linear-gradient(135deg, var(--color-neutro-300), var(--color-acento)); 
+ 
 }
-
 .sobre-mi div {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   max-width: 65ch;
-}
-
-.italic {
-  font-style: italic;
 }
 
 @media (width > 768px) {

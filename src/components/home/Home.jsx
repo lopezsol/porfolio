@@ -11,20 +11,20 @@ export function Home() {
           className="avatar"
         />
         <h2 className="titulo">Desarrolladora de software</h2>
-        <h1 className="nombre verde">Sol López Ríos</h1>
+        <h1 className="nombre destacado">Sol López Ríos</h1>
         <p className="tag-disponible ">Disponible para trabajar</p>
 
         <p className="resumen">
           Estudiante del último año de
-          <b className="verde"> Ingeniería en Sistemas de Información</b>.
+          <b className="destacado"> Ingeniería en Sistemas de Información</b>.
           <br />
           Con conocimientos en React, Java, Spring Boot y MySQL.
         </p>
         <nav className="container-botones">
-          <Boton tipo="curriculum" estilo="primario" />
-          <Boton tipo="correo" estilo="primario" />
-          <Boton tipo="linkedin" estilo="primario" />
-          <Boton tipo="github" estilo="primario" />
+          <Boton tipo="curriculum" className="primario" />
+          <Boton tipo="correo" className="primario" />
+          <Boton tipo="linkedin" className="primario" />
+          <Boton tipo="github" className="primario" />
         </nav>
       </div>
     </section>

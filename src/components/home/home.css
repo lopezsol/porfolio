@@ -24,11 +24,12 @@
   max-inline-size: 100%;
   display: block;
   grid-area: avatar;
+  border-radius: var(--border-radius-lg);
 }
 
 .titulo {
-  font-style: italic;
-  font-weight: 300;
+  font-style: var(--fst-italic);
+  font-weight: var(--fw-light);
   font-size: var(--fs-md);
   grid-area: titulo;
   line-height: 1;
@@ -43,8 +44,8 @@
 
 .tag-disponible {
   padding: 5px;
-  background-color: #c4d7d1;
-  border: 1px solid #2e5a5a;
+  background-color: var(--color-neutro-300);
+  border: 1px solid var(--color-principal);
 
   width: fit-content;
   height: fit-content;

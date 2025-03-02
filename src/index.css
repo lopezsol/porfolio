@@ -3,6 +3,21 @@
 }
 
 :root {
+  /* Fuentes */
+  --ff: "Montserrat";
+
+  /* Pesos de fuente */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Estilos de fuente */
+  --fst-italic: italic;
+  --fst-normal: normal;
+
+  /* Tamaños de fuente */
   --fs-sm: clamp(0.8rem, 0.17vi + 0.76rem, 0.89rem);
   --fs-base: clamp(1rem, 0.34vi + 0.91rem, 1.19rem);
   --fs-md: clamp(1.25rem, 0.61vi + 1.1rem, 1.58rem);
@@ -10,13 +25,49 @@
   --fs-xl: clamp(1.95rem, 1.56vi + 1.56rem, 2.81rem);
   --fs-xxl: clamp(2.44rem, 2.38vi + 1.85rem, 3.75rem);
   --fs-xxxl: clamp(3.05rem, 3.54vi + 2.17rem, 5rem);
+
+  /* Color principal y acento */
+  --color-principal: #2e5a5a; /* Azul principal */
+  --color-acento: #ffb6a3; /* Coral (acento) */
+  --color-acento: hsl(0, 100%, 84%)  ; /* Coral (acento) */
+
+
+
+  /* Colores semánticos */
+  --color-info: #4a90e2; /* Azul (información) */
+  --color-alerta: #ff6f61; /* Coral (alerta) */
+  --color-exito: #50c878; /* Verde (éxito) */
+  --color-aviso: #ffd700; /* Amarillo (aviso) */
+
+  /* Colores neutros derivados del principal */
+  --color-neutro-100: hsl(180, 33%, 96%); /* #f0f5f5 */
+  --color-neutro-200: hsl(180, 20%, 88%); /* #d9e2e2 */
+  --color-neutro-300: hsl(180, 20%, 78%); /* #bccdcd */
+  --color-neutro-400: hsl(180, 12%, 54%); /* #829b9b */
+
+  /* Colores neutros derivados del acento */
+  --color-acento-100: hsl(0, 100%, 80%); /* Neutro claro */
+  
+  /* Texto y fondos */
+  --color-texto: hsl(215, 28%, 17%); /* Color de texto principal */
+  --color-texto-secundario: #666666; /* Color de texto secundario */
+  --color-fondo: #f5f5f5; /* Color de fondo claro */
+  --color-fondo-oscuro: #1a1a1a; /* Color de fondo oscuro */
+
+  /* Bordes */
+  --border-radius-sm: 4px;
+  --border-radius-base: 8px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 20px;
+
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
-  color: hsl(180, 32%, 6%, 100%);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
 }
 
 html {
@@ -55,24 +106,23 @@ dd {
 
 /* Aplicar la fuente a toda la página */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--ff), Arial, sans-serif;
+  font-style: var(--fst-normal);
 }
 
 .container {
   width: 90%;
   margin: auto;
-  font-family: "Montserrat", Arial, sans-serif;
-  font-style: normal;
   margin-top: 3rem;
 }
 
 .verde {
-  color: #2e5a5a;
+  color: var(--color-principal);
 }
 
 .titulo-seccion {
   font-size: var(--fs-lg);
-  color: #2e5a5a;
+  color: var(--color-principal);
   margin-bottom: 2rem;
 }
 
@@ -80,6 +130,12 @@ p {
   font-size: var(--fs-base);
 }
 
+.destacado {
+  color: var(--color-principal);
+}
+.destacado-cursiva {
+  font-style: var(--fst-italic);
+}
 @media (width > 600px) {
   .container {
     margin-top: 6.5rem;

@@ -28,10 +28,11 @@ export function Navbar() {
     <nav className="nav-principal">
       <ul>
         {navItems.map((link) => {
+          const { url, label, title } = link;
           return (
-            <li key={link.url}>
-              <a href={link.url} aria-label={link.label}>
-                {link.title}
+            <li key={url}>
+              <a href={url} aria-label={label}>
+                {title}
               </a>
             </li>
           );
