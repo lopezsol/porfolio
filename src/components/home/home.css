@@ -17,8 +17,7 @@
     "botones  botones botones .";
   row-gap: 0.5rem;
   align-items: center;
-
-
+  animation: fade-up 0.6s;
 }
 
 .avatar {
@@ -26,7 +25,6 @@
   display: block;
   grid-area: avatar;
   border-radius: var(--border-radius-lg);
-  animation: fade-up 0.6s;
 
 }
 
