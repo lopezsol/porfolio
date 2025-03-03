@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./navbar.css";
 
 const navItems = [
@@ -24,6 +25,19 @@ const navItems = [
 ];
 
 export function Navbar() {
+
+  useEffect(() => {
+    const navigation = document.querySelector(".nav-principal");
+
+    if (navigation) {
+      const navigationHeight = navigation.offsetHeight;
+      document.documentElement.style.setProperty(
+        "--scroll-padding",
+        `${navigationHeight}px`
+      );
+    }
+  }, []);
+
   return (
     <nav className="nav-principal">
       <ul>

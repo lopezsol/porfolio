@@ -8,30 +8,32 @@ export function SobreMi() {
         <img src="/images/foto-perfil.webp" alt="" />
         <div>
           <p>
-            Me llamo <b className="destacado">María Sol López Ríos</b> y soy de
-            <b className="destacado"> Chubut, Argentina</b>. Mi enfoque
-            principal está en el{" "}
-            <b className="destacado">desarrollo full stack</b> , pero también
-            estoy interesada en el{" "}
-            <span className="destacado-cursiva">
+            Me llamo <strong className="destacado">María Sol López Ríos</strong>{" "}
+            y soy de
+            <strong className="destacado"> Chubut, Argentina</strong>. Mi
+            enfoque principal está en el{" "}
+            <strong className="destacado">desarrollo full stack</strong> , pero
+            también estoy interesada en el{" "}
+            <em className="destacado-cursiva">
               análisis de datos, QA y soporte técnico
-            </span>
+            </em>
             .
           </p>
           <p>
-            Me encantan los <b className="destacado"> videojuegos</b>. Creo que
-            programar y jugar tienen mucho en común: en ambos casos se trata de{" "}
-            <b className="destacado">
+            Me encantan los <strong className="destacado"> videojuegos</strong>.
+            Creo que programar y jugar tienen mucho en común: en ambos casos se
+            trata de{" "}
+            <strong className="destacado">
               resolver desafíos, aprender de los errores y mejorar
               constantemente
-            </b>
+            </strong>
             .
           </p>
           <p>
-            <b className="destacado">
-              Mi objetivo es seguir creciendo en el sector IT
-            </b>{" "}
-            y convertir ideas en soluciones reales a través del código.
+            Mi objetivo es convertir{" "}
+            <strong className="destacado">ideas en soluciones reales </strong> a
+            través del código, creando experiencias significativas para los
+            usuarios.
           </p>
         </div>
       </article>

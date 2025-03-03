@@ -14,7 +14,7 @@
     "nombre nombre nombre nombre "
     "tag tag tag tag"
     "resumen resumen resumen resumen"
-    "botones  botones botones .";
+    "botones  botones botones botones";
   row-gap: 0.5rem;
   align-items: center;
   animation: fade-up 0.6s;
@@ -25,7 +25,6 @@
   display: block;
   grid-area: avatar;
   border-radius: var(--border-radius-lg);
-
 }
 
 .titulo {
@@ -63,8 +62,10 @@
 .container-botones {
   display: flex;
   justify-content: space-between;
+  margin: auto;
   grid-area: botones;
   margin-top: 2rem;
+  width: 90%;
 }
 
 @keyframes fade-up {
@@ -86,7 +87,7 @@
       "avatar nombre nombre"
       "avatar tag tag"
       "resumen resumen resumen"
-      "botones botones .";
+      "botones botones botones";
     column-gap: 2rem;
     row-gap: 0;
   }
@@ -94,6 +95,8 @@
   .titulo {
     margin-top: 0;
   }
+
+  
 }
 
 @media (width > 700px) {
@@ -104,6 +107,9 @@
       "avatar tag tag"
       "resumen resumen resumen"
       "botones botones botones";
+  }
+  .container-botones {
+    width: 100%;
   }
 }
 

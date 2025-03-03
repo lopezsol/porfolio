@@ -16,7 +16,7 @@ export function Home() {
 
         <p className="resumen">
           Estudiante del último año de
-          <b className="destacado"> Ingeniería en Sistemas de Información</b>.
+          <strong className="destacado"> Ingeniería en Sistemas de Información</strong>.
           <br />
           Con conocimientos en React, Java, Spring Boot y MySQL.
         </p>

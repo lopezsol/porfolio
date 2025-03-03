@@ -2,7 +2,7 @@
   padding-block: 1rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .scroller-inner img {
@@ -62,14 +62,10 @@
 }
 @keyframes scroll {
   to {
-    transform: translate(calc(-50% - 1rem));
+    transform: translate(calc(-50% - 2rem));
   }
 }
 @media (width > 600px) {
-  .scroller-inner {
-    gap: 4rem;
-  }
-
   .scroller-inner img {
     width: 75px;
   }
